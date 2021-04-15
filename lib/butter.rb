@@ -8,7 +8,7 @@ class Butter
     end
 
     def is_expensive?
-        if self.price > 10
+        if self.price > 15
             return true
         end
         return false
