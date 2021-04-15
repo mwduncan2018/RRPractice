@@ -1,16 +1,20 @@
-class Butter
-    attr_accessor :brand
-    attr_accessor :price
+module Food
 
-    def initialize brand, price
-        @brand = brand
-        @price = price
-    end
+    class Butter
+        attr_accessor :brand
+        attr_accessor :price
 
-    def is_expensive?
-        if self.price > 15
-            return true
+        def initialize brand, price
+            @brand = brand
+            @price = price
         end
-        return false
+
+        def is_expensive?
+            if self.price > 15
+                return true
+            end
+            return false
+        end
     end
+
 end
